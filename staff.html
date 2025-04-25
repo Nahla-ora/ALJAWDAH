@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>كوادرنا - مدارس الجودة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --smokey-black: hsl(203, 63%, 28%);
+      --radical-red: hsl(275, 90%, 40%);
+      --white: hsl(0, 0%, 100%);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--smokey-black);
+      color: white;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--smokey-black);
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* الفلو شارت */
+    .flowchart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+
+    /* تنظيم المربعات بشكل عمودي */
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px; /* حجم موحد للمربعات */
+      text-align: center;
+      transition: transform 0.3s ease;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .box h2 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 16px;
+      color: #f0f0f0;
+    }
+
+    .box i {
+      font-size: 40px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .arrow {
+      width: 40px; /* حجم أصغر للأسهم */
+      height: auto;
+      margin: 20px 0;
+    }
+
+    /* محاذاة النص */
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="header" data-header>
+    <h1>كوادرنا</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <p class="section-title">نظرة عامة على كوادرنا التعليمية</p>
+      <p>نحن نؤمن بأن كوادرنا هي أساس قوتنا، لذا نقدم لكم نظرة عامة على سمات كوادرنا التعليمية الفريدة.</p>
+
+      <!-- الفلو شارت -->
+      <div class="flowchart">
+        <!-- مربعات الفلو شارت -->
+        <div class="box-container">
+          <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <h2>معلمون ومعلمات أكفاء</h2>
+            <p>ذوي تخصصات ومؤهلات علمية عالية.</p>
+          </div>
+
+          <img src="https://img.icons8.com/ios/452/down.png" alt="Arrow" class="arrow">
+
+          <div class="box">
+            <i class="fas fa-book-open"></i>
+            <h2>خبرة في المناهج التعليمية</h2>
+            <p>مناهج تعليمية متطورة تستند إلى أساليب عالمية.</p>
+          </div>
+
+          <img src="https://img.icons8.com/ios/452/down.png" alt="Arrow" class="arrow">
+
+          <div class="box">
+            <i class="fas fa-heart"></i>
+            <h2>شغف في التعليم</h2>
+            <p>حب التعاون والروح الإيجابية مع الطلاب.</p>
+          </div>
+
+          <img src="https://img.icons8.com/ios/452/down.png" alt="Arrow" class="arrow">
+
+          <div class="box">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h2>قدرة على التعليم والتطوير</h2>
+            <p>التطوير المستمر للكوادر والطلاب على حد سواء.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>

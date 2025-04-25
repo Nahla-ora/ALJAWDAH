@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مشاريع المواد العلمية - مدارس الجودة</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/academic.css">
+
+  <!-- إضافة خط Poppins من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --smokey-black: hsl(203, 63%, 28%);
+      --eerie-black: hsl(203, 63%, 28%);
+      --radical-red: hsl(275, 90%, 40%);
+      --white: hsl(0, 0%, 100%);
+      --black: hsl(0, 0%, 0%);
+      --gradient-1: linear-gradient(180deg, transparent, var(--smokey-black));
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--smokey-black);
+      color: white;
+    }
+    .header {
+  position:absolute; /* الهيدر ثابت في أعلى الصفحة */
+  top: -180px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0; /* تقليص المسافة الداخلية */
+  text-align: center;
+}
+
+.header .logo img {
+  width: 80px; /* تقليص حجم اللوجو */
+  height: auto;
+}
+
+.header h1 {
+  font-size: 30px; /* تقليص حجم الخط */
+  margin-top: 5px; /* تقليل المسافة بين اللوجو والعنوان */
+  color: white;
+}
+
+.header h1 {
+  font-size: 30px; /* تقليص حجم الخط */
+  margin-top: 5px; /* تقليل المسافة بين اللوجو والعنوان */
+  color: white;
+}
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    .section-text {
+      font-size: 15px;
+      margin-bottom: 70px;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .box h2 {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 16px;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 55px;
+      height: 55px;
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      margin-top: 40px;
+    }
+
+    .btn-icon:hover {
+      background-color: var(--radical-red);
+    }
+
+    .btn-icon img {
+      width: 25px;
+      height: auto;
+    }
+
+    .btn-icon:hover img {
+      filter: invert(1);
+    }
+
+    /* نافذة الفيديو */
+    #videoModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #videoModal video {
+      width: 80%;
+      max-width: 700px;
+      border-radius: 12px;
+    }
+
+    #videoModal span {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </a>
+      <h1>مشاريع المواد العلمية</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="grid">
+        <div class="box" onclick="openVideo('./assets/videos/programmer.mp4')">
+          <h2>مشاريع مادة العلوم</h2>
+          <p>اضغط للمشاهدة</p>
+        </div>
+        <div class="box" onclick="openVideo('./assets/videos/french-girls.mp4')">
+            <h2>مشاريع مادة العلوم</h2>
+            <p>اضغط للمشاهدة</p>
+        </div>
+        <div class="box" onclick="openVideo('./assets/videos/chinese.mp4')">
+            <h2>مشاريع مادة العلوم</h2>
+            <p>اضغط للمشاهدة</p>
+        </div>
+        <div class="box" onclick="openVideo('./assets/videos/english-programs.mp4')">
+            <h2>مشاريع مادة العلوم</h2>
+            <p>اضغط للمشاهدة</p>
+        </div>
+        <div class="box" onclick="openVideo('./assets/videos/STEM.mp4')">
+            <h2>مشاريع مادة العلوم</h2>
+            <p>اضغط للمشاهدة</p>
+        </div>
+        <div class="box" onclick="openVideo('./assets/videos/computer-science.mp4')">
+          <h2>مشاريع مادة العلوم</h2>
+          <p>اضغط للمشاهدة</p>
+        </div>
+      </div>
+
+      <a href="index.html" class="btn-icon">
+        <img src="./assets/images/scroll-down.svg" alt="رجوع">
+      </a>
+    </div>
+  </main>
+
+  <!-- aaaشباك الفيديو -->
+  <div id="videoModal">
+    <div style="position:relative;">
+      <span onclick="closeVideo()">&times;</span>
+      <video id="videoPlayer" controls>
+        <source src="" type="video/mp4">
+        المتصفح لا يدعم تشغيل الفيديو.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    function openVideo(videoSrc) {
+      var videoPlayer = document.getElementById('videoPlayer');
+      videoPlayer.src = videoSrc;
+      videoPlayer.load();  // لتحميل الفيديو بشكل صحيح
+      videoPlayer.play();  // تشغيل الفيديو مباشرة بعد تحميله
+      document.getElementById('videoModal').style.display = 'flex';
+    }
+
+    function closeVideo() {
+      var videoPlayer = document.getElementById('videoPlayer');
+      document.getElementById('videoModal').style.display = 'none';
+      videoPlayer.pause();
+      videoPlayer.currentTime = 0;  // إعادة الفيديو إلى البداية بعد الإيقاف
+    }
+  </script>
+</body>
+</html>

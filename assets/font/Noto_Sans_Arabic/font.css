@@ -1,0 +1,48 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+/**
+ * RECOLETA FONT
+ */
+ @font-face {
+  font-family: 'Noto_Sans_Arabic';
+  src: url('../static/NotoSansArabic-Black.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto_Sans_Arabic';
+  src: url('./Noto_Sans_Arabic/static/NotoSansArabic_SemiCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto_Sans_Arabic';
+  src: url('./Noto_Sans_Arabic/static/NotoSansArabic-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto_Sans_Arabic';
+  src: url('./Noto_Sans_Arabic/static/NotoSansArabic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900; /* يدعم كل الأوزان */
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ff-arabic: 'Noto Sans Arabic', sans-serif;
+}
